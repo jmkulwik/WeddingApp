@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="custom_background_color_start">#000014</color>
+    <color name="custom_background_color_end">#000044</color>
+    <color name="custom_text_color">#C0C0C0</color>
+    <color name="custom_text_color_secondary">#2a2a52</color>
+    <color name="white">#ffffff</color>
+</resources>
