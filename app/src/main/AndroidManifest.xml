@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="opaleski.jessie.weddingapp" >
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission android:name="com.example.gcm.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.example.gcm.permission.C2D_MESSAGE" />
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -24,10 +32,10 @@
         <activity
             android:name=".CameraActivity"
             android:label="@string/title_activity_camera"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".MenuActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="opaleski.jessie.weddingapp.MainActivity" />
+                android:value="opaleski.jessie.weddingapp.MenuActivity" />
         </activity>
         <activity
             android:name=".MenuActivity"
@@ -35,8 +43,7 @@
         </activity>
         <activity
             android:name=".MessageBoard"
-            android:label="@string/title_activity_message_board"
-            android:parentActivityName=".MenuActivity" >
+            android:label="@string/title_activity_message_board" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="opaleski.jessie.weddingapp.MenuActivity" />
