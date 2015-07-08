@@ -32,16 +32,16 @@ public class MainActivity extends Activity {
         // second argument is the default to use if the preference can't be found
         Boolean welcomeScreenShown = preferences.getBoolean(welcomeScreenShownPref, false);
 
-        if (!welcomeScreenShown) {
+       // if (!welcomeScreenShown) { TODO: here
             displayScreen();
             SharedPreferences.Editor editor = preferences.edit();
             editor.putBoolean(welcomeScreenShownPref, true);
             editor.apply(); // Very important to save the preference
-        } else {
+       /* } else {
             Intent menuIntent = new Intent(this, MenuActivity.class);
             startActivity(menuIntent);
             finish();
-        }
+        }*/
     }
 
     @Override
