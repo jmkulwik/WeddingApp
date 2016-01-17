@@ -27,6 +27,8 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Parse.initialize(this, "M9DxWvjXvPe60Bd1Zm5YAs91FxEaCsA1FGurQjBF", "GfgARGavTQCdMp3ZGYw45ysjSViBqMJqMOxwdYNB");
+
         setContentView(R.layout.activity_main);
         preferences = PreferenceManager.getDefaultSharedPreferences(this);
         // second argument is the default to use if the preference can't be found
