@@ -13,6 +13,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import com.parse.Parse;
+
 public class MainActivity extends Activity {
 
     SharedPreferences preferences;
